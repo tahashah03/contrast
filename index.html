@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/Contrast Logo.svg">
+
+    <title>Contrast</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <div class="navigation__logo-box">
+                <img class="navigation__logo" src="./assets/Contrast Logo.svg">
+            </div>
+
+            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+
+            <div class="navigation__nav">
+                <div class="navigation__nav-left">
+                    <a href="#" class="navigation__item link-text">Browse</a>
+                </div>
+                <div class="navigation__nav-right">
+                    <div class="search navigation__item">
+                        <img src="./assets/Search.svg" class="search__icon">
+                        <input type="text" placeholder="Search" class="search__input">
+                    </div>
+                    <a href="#" class="navigation__item link-text btn btn--purple">Submit Resource</a>
+                </div>
+            </div>
+
+
+
+
+            <label for="nav-toggle" class="navigation__button">
+                <span class="navigation__icon"></span>
+            </label>
+        </nav>
+        <main>
+            <section class="hero">
+                <div>
+                    <h1 class="heading-primary">
+                        Design resources for developers.
+                    </h1>
+                    <p class="paragraph">
+                        Explore a collection of 3400+ curated design resources, both free
+                        and paid, developers can use to create landing pages quicker.
+                    </p>
+                    <a href="#" class="btn btn--purple u-margin-bottom-medium">Submit Resource</a>
+                    <div>
+                        <p class="paragraph u-margin-bottom-small">Used by individuals in</p>
+                        <div class="icon-list">
+                            <img src="./Assets/Google Logo.svg" alt="Google Logo">
+                            <img src="./Assets/Discord Logo.svg" alt="Discord Logo">
+                            <img src="./Assets/Slack Logo.svg" alt="Slack Logo">
+                            <img src="./Assets/Twitter Logo.svg" alt="Twitter Logo">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./Assets/Hero Image.png" class="hero__img" alt="Hero Img">
+                </div>
+            </section>
+            <section class="resources">
+                <div class="types">
+                    <div class="types__list">
+                        <button class="types__item active-type" id="fonts">Fonts</button>
+                        <button class="types__item" id="mockups">Mockups</button>
+                        <button class="types__item" id="illustrations">Illustrations</button>
+                        <button class="types__item" id="icons">Icons</button>
+                    </div>
+                    <div class="sort">
+                        <p>Sort by</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="sort__icon" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="resources-container fonts active-resource">
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image="" src="./Assets/Resources/Fonts/Google Fonts.svg">
+                        <h3 class="heading-tertiary">Google Fonts</h3>
+                        <p class="resources-item__paragraph">Making the web more beautiful, fast, and open
+                            through great typography.</p>
+                        <a target="_blank" href="https://freetypography.com/" class="resources-item__link">Visit
+                            Resource →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image="" src="./Assets/Resources/Fonts/MyFonts Logo.svg">
+                        <h3 class="heading-tertiary">MyFonts</h3>
+                        <p class="resources-item__paragraph">The #1 place to download great @font-face
+                            webfonts and desktop fonts.</p>
+                        <a target="_blank" href="https://fonts.google.com/" class="resources-item__link">Visit Resource
+                            →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Fonts/FontSquirrel Logo.svg">
+                        <h3 class="heading-tertiary">Font Squirrel</h3>
+                        <p class="resources-item__paragraph">Font Squirrel scours the internet for high
+                            quality and legitimately free fonts.</p>
+                        <a target="_blank" href="https://usemodify.com/" class="resources-item__link">Visit
+                            Resource →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Fonts/Adobe Fonts Logo.svg">
+                        <h3 class="heading-tertiary">Adobe Fonts</h3>
+                        <p class="resources-item__paragraph">Thousands of beautiful fonts to designers
+                            every day by leading foundries.</p>
+                        <a target="_blank" href="https://www.fontget.com/" class="resources-item__link">Visit Resource
+                            →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Fonts/FontSpark Logo.svg">
+                        <h3 class="heading-tertiary">FontSpark</h3>
+                        <p class="resources-item__paragraph">Helping designers discover the perfect font
+                            for their next design project.</p>
+                        <a target="_blank" href="https://devfonts.gafi.dev/" class="resources-item__link">Visit Resource
+                            →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Fonts/Better Web Type Logo.svg">
+                        <h3 class="heading-tertiary">BetterWebType</h3>
+                        <p class="resources-item__paragraph">A web typography course for web designers and
+                            web developers by Matej Latin.</p>
+                        <a target="_blank" href="https://www.fontget.com/" class="resources-item__link">Visit Resource
+                            →</a>
+                    </article>
+                </div>
+                <div class="resources-container mockups">
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Mockups/Mockupworld Logo.svg">
+                        <h3 class="heading-tertiary">Mockup World</h3>
+                        <p class="resources-item__paragraph">The biggest source of free photo-realistic
+                            Mockups online.</p>
+                        <a target="_blank" href="https://www.mockupworld.co/" class="resources-item__link">Visit
+                            Resource →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Mockups/Collabshot Logo.svg">
+                        <h3 class="heading-tertiary">Collab Shot</h3>
+                        <p class="resources-item__paragraph">Real-time screen grabs and image sharing.</p>
+                        <a target="_blank" href="https://www.collabshot.com/" class="resources-item__link">Visit
+                            Resource →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Mockups/Facebook Design Logo.svg">
+                        <h3 class="heading-tertiary">Facebook Devices</h3>
+                        <p class="resources-item__paragraph">Images and Sketch files of popular devices.
+                        </p>
+                        <a target="_blank" href="https://facebook.design/devices" class="resources-item__link">Visit
+                            Resource →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Mockups/Animockup Logo.svg">
+                        <h3 class="heading-tertiary">Animockup</h3>
+                        <p class="resources-item__paragraph">Create animated mockups in the browser 🔥.</p>
+                        <a target="_blank" href="https://animockup.com/" class="resources-item__link">Visit
+                            Resource →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image="" src="./Assets/Resources/Mockups/MockuPhone.svg">
+                        <h3 class="heading-tertiary">Mockuphone</h3>
+                        <p class="resources-item__paragraph">100% free mockups for all devices including
+                            IOS, Android, Windows Phone, Laptop &amp; Desktop and TV</p>
+                        <a target="_blank" href="https://mockuphone.com/" class="resources-item__link">Visit Resource
+                            →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Mockups/DeviceShots Logo.svg">
+                        <h3 class="heading-tertiary">Device Shots</h3>
+                        <p class="resources-item__paragraph">Create high-resolution device mockups for
+                            social media, for free</p>
+                        <a target="_blank" href="https://deviceshots.com/" class="resources-item__link">Visit Resource
+                            →</a>
+                    </article>
+                </div>
+                <div class="resources-container illustrations">
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Illustrations/Humaaans Logo.svg">
+                        <h3 class="heading-tertiary">Humaaans</h3>
+                        <p class="resources-item__paragraph">Cool illustrations of people with the ability
+                            to mix and match.</p>
+                        <a target="_blank" href="https://www.humaaans.com/" class="resources-item__link">Visit Resource
+                            →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Illustrations/DrawKit Logo.svg">
+                        <h3 class="heading-tertiary">DrawKit</h3>
+                        <p class="resources-item__paragraph">Illustrations for designers and startups.</p>
+                        <a target="_blank" href="https://www.drawkit.io/" class="resources-item__link">Visit Resource
+                            →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Illustrations/Absurd Logo.svg">
+                        <h3 class="heading-tertiary">Absurd Design</h3>
+                        <p class="resources-item__paragraph">Free surrealist illustrations for designers
+                            and developers.</p>
+                        <a target="_blank" href="https://absurd.design/" class="resources-item__link">Visit
+                            Resource →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Illustrations/unDraw.svg">
+                        <h3 class="heading-tertiary">unDraw</h3>
+                        <p class="resources-item__paragraph">Open-source illustrations for any idea you can
+                            imagine and create.</p>
+                        <a target="_blank" href="https://undraw.co/" class="resources-item__link">Visit
+                            Resource →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Illustrations/ManyPixels Logo.svg">
+                        <h3 class="heading-tertiary">ManyPixels</h3>
+                        <p class="resources-item__paragraph">Monochromatic, Isometric high-quality
+                            illustrations.</p>
+                        <a target="_blank" href="https://www.manypixels.co/gallery/" class="resources-item__link">Visit
+                            Resource →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Illustrations/Open Peeps Logo.svg">
+                        <h3 class="heading-tertiary">Open Peeps</h3>
+                        <p class="resources-item__paragraph">Hand drawn illustration library.</p>
+                        <a target="_blank" href="https://www.openpeeps.com/" class="resources-item__link">Visit Resource
+                            →</a>
+                    </article>
+                </div>
+                <div class="resources-container icons">
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image="" src="./Assets/Resources/Icons/UXWing Logo.svg">
+                        <h3 class="heading-tertiary">UXWing</h3>
+                        <p class="resources-item__paragraph">Well Optimized, Free icons for commercial use.
+                        </p>
+                        <a target="_blank" href="https://uxwing.com/" class="resources-item__link">Visit
+                            Resource →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" data-image=""
+                            src="./Assets/Resources/Icons/ShapedFonts Logo.svg">
+                        <h3 class="heading-tertiary">Shapedfonts Iconclub</h3>
+                        <p class="resources-item__paragraph">8000+ free icons for everyone to use.</p>
+                        <a target="_blank" href="https://shapedfonts.com/iconclub/" class="resources-item__link">Visit
+                            Resource →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" src="./Assets/Resources/Icons/Feather Logo.svg">
+                        <h3 class="heading-tertiary">Feather Icons</h3>
+                        <p class="resources-item__paragraph">Beautiful, customizable open source icons.</p>
+                        <a target="_blank" href="https://feathericons.com/" class="resources-item__link">Visit Resource
+                            →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" src="./Assets/Resources/Icons/Tabler Icons Logo.svg">
+                        <h3 class="heading-tertiary">Tabler Icons</h3>
+                        <p class="resources-item__paragraph">470+ highly customizable open source SVG
+                            icons.</p>
+                        <a target="_blank" href="https://tablericons.com/" class="resources-item__link">Visit Resource
+                            →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" src="./Assets/Resources/Icons/Icons8 Logo.svg">
+                        <h3 class="heading-tertiary">Icons8</h3>
+                        <p class="resources-item__paragraph">Free icons, photos, vectors and tools.</p>
+                        <a target="_blank" href="https://icons8.com/" class="resources-item__link">Visit
+                            Resource →</a>
+                    </article>
+
+                    <article class="resources-item">
+                        <img class="resources-item__img" src="./Assets/Resources/Icons/Flaticon Logo.svg">
+                        <h3 class="heading-tertiary">Flat Icon</h3>
+                        <p class="resources-item__paragraph">The largest database of free icons in PNG,
+                            SVG, EPS, PSD and BASE 64 formats.</p>
+                        <a target="_blank" href="https://www.flaticon.com/" class="resources-item__link">Visit Resource
+                            →</a>
+                    </article>
+                </div>
+            </section>
+            <section class="cta">
+                <div>
+                    <h2 class="heading-secondary">
+                        Receive design resources every week. Straight to your inbox.
+                    </h2>
+                    <p class="cta__text">
+                        Discover dozens of design resources each week from educational
+                        material to illustrations.
+                    </p>
+                    <div class="cta__action">
+                        <input type="email" placeholder="john@example.com" class="cta__input">
+                        <a href="#" class="btn btn--cta">Subscribe</a>
+                    </div>
+                    <p class="cta__text">*No spam, unsubscribe anytime.</p>
+                </div>
+                <div>
+                    <img src="./Assets/Peeps.png" alt="" class="cta__img">
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__description">
+                <img src="./Assets/Contrast Logo.svg" alt="Contrast Logo" class="u-margin-bottom-small">
+                <p>
+                    Explore a collection of 3400+ curated design resources, both free
+                    and paid, developers can use to create landing pages quicker.
+                </p>
+            </div>
+            <div class="footer__navigation">
+                <div>
+                    <h3 class="heading-tertiary">Resources</h3>
+                    <ul class="footer__list">
+                        <li><a href="#">Fonts</a></li>
+                        <li><a href="#">Illustrations</a></li>
+                        <li><a href="#">Mockups</a></li>
+                        <li><a href="#">Icons</a></li>
+                        <li><a href="#">Books</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="heading-tertiary">Comapny</h3>
+                    <ul class="footer__list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="heading-tertiary">Support</h3>
+                    <ul class="footer__list">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="heading-tertiary">Sponsor</h3>
+                    <ul class="footer__list">
+                        <li><a href="#">Sponsor Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
